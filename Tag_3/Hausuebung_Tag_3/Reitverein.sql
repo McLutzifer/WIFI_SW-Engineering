@@ -83,7 +83,7 @@ CREATE TABLE Trainings (
 	ReitplatzID INTEGER NOT NULL,
 	
 	UNIQUE (Startzeit, ReiterID), 
-	UNIQUE (ReiterID, PferdeID),
+	UNIQUE (ReiterID, PferdeID, Startzeit),
 	UNIQUE (PferdeID, Startzeit)
 );
 
